@@ -78,7 +78,9 @@ class BitcoinFaucet
             return 3;
 
         $txid = $this->sendToAddress($address, $ip, $this->sent_amount);
-        if(!$txid) return 3;
+        if(!$txid)
+            return 4;
+
         else return $txid;
     }
 }
