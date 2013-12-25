@@ -81,7 +81,7 @@ class BitcoinFaucet
         if(!$txid)
             return 4;
 
-        else return $txid;
+        return $txid;
     }
 }
 
