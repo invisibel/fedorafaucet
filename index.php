@@ -24,7 +24,9 @@ else if($result == 2)
     $message = "Sorry, but you've already had coins in the last 12 hours.";
 else if($result == 3)
     $message = "There aren't enough coins in the faucets wallet for us to drip you some.";
-
+else if($result == 4)
+    $message = "There was an error sending the coins.";
+    
 echo $message;
 
 } else {
