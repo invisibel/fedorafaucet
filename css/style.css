@@ -1,0 +1,56 @@
+body{
+	background-color: #EEEEEE;
+	height: 100%;
+	width: 100%;
+}
+
+#faucet{
+	background-color: white;
+	height: 500px;
+	position: fixed;
+	top: 50%;
+	margin-top: -250px;
+	width: 100%;
+	
+	-webkit-box-shadow: 0px -1px 3px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px -1px 3px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px -1px 3px rgba(50, 50, 50, 0.75);
+}
+
+	#faucet nav{
+		background-color: #FA940E;
+		height: 80px;
+		width: 100%;
+	}
+	
+		#faucet nav span{
+			display: inline-block;
+			padding: 15px;
+			height: 80px;
+		}
+
+		#faucet nav .brand{
+			background-color: #ECECEC;
+			color: #000000;
+			font-size: 200%;
+		}
+
+		#faucet nav .page-title{
+			background-color: #F77111;
+			display: inline;
+			padding-top: 24px;
+			padding-bottom: 27px;
+			padding-right: 100px;
+			font-size: 25px;
+			color: white;
+			margin-left: -4px;
+		}
+
+	#faucet #content{
+		padding-top: 50px;
+	}
+	
+	#faucet #content form{
+		width: 70%;
+	}
+		
