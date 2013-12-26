@@ -5,6 +5,8 @@ include "includes/recaptchalib.php";
 $error = false;
 $success = false;
 
+$captcha = "<script type=\"text/javascript\" src=\"http://www.google.com/recaptcha/api/challenge?k={$faucet->config['recaptcha_public']}\"></script>";
+
 if(isset($_POST['submit'])){
 	$resp = recaptcha_check_answer($faucet->config['recaptcha_private'],$_SERVER["REMOTE_ADDR"], $_POST["recaptcha_challenge_field"], $_POST["recaptcha_response_field"]);
 	
