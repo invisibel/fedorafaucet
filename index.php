@@ -111,10 +111,10 @@ ENDHTML;
 								<div class="input-group">
 									<input type="text" id="recaptcha_response_field" name="recaptcha_response_field" class="input-recaptcha form-control" />
 									<span class="input-group-btn">
-										<button class="btn btn-default" href="javascript:Recaptcha.reload()"><span class="glyphicon glyphicon-refresh"></span></button>
-										<button class="btn btn-default recaptcha_only_if_image" href="javascript:Recaptcha.switch_type('audio')"><span title="Get an audio CAPTCHA" class="glyphicon glyphicon-headphones"></span></button>
-										<button class="btn btn-default recaptcha_only_if_audio" href="javascript:Recaptcha.switch_type('image')"><span title="Get an image CAPTCHA" class="glyphicon glyphicon-picture"></span></button>
-										<button class="btn btn-default" href="javascript:Recaptcha.showhelp()"><span class="glyphicon glyphicon-question-sign"></span></button>
+										<button class="btn btn-default" href="#" onclick="Recaptcha.reload();return false;"><span class="glyphicon glyphicon-refresh"></span></button>
+										<button class="btn btn-default recaptcha_only_if_image" href="#" onclick="Recaptcha.switch_type('audio');return false;"><span title="Get an audio CAPTCHA" class="glyphicon glyphicon-headphones"></span></button>
+										<button class="btn btn-default recaptcha_only_if_audio" href="#" onclick="Recaptcha.switch_type('image');return false;"><span title="Get an image CAPTCHA" class="glyphicon glyphicon-picture"></span></button>
+										<button class="btn btn-default" href="#" onclick="Recaptcha.showhelp();return false;"><span class="glyphicon glyphicon-question-sign"></span></button>
 									</span>
 								</div>
 							</div>
