@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
 		$ip = $_SERVER['REMOTE_ADDR'];
 		$result = $faucet->drip($address, $ip);
 		
-		if($result > 0){
+		if(!is_string($result)){
 			$error = true;
 			switch($result){
 				case 1:
