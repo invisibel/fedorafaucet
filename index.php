@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
 		$address = $_POST['address'];
 		$ip = $_SERVER['REMOTE_ADDR'];
 		$result = $faucet->drip($address, $ip);
-		
+
 		if(!is_string($result)){
 			$error = true;
 			switch($result){
@@ -92,7 +92,7 @@ ENDHTML;
 						<div class="form-group">
 							<label for="inputEmail3" class="col-sm-3 control-label">Wallet address</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" id="inputWallet" placeholder="E9001FOR1337EUPHORIC">
+								<input type="text" class="form-control" id="inputWallet" name="address" placeholder="E9001FOR1337EUPHORIC">
 							</div>
 						</div>
 						<div class="form-group">
@@ -125,7 +125,7 @@ ENDHTML;
 							</div>
 						</div>
 
-						$captcha;
+						$captcha
 					</form>
 ENDHTML;
 					}
